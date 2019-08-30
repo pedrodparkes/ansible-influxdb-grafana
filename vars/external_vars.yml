@@ -15,7 +15,7 @@ INFLUXDB_PASSWORD: 'project'
 INFLUXDB_GRAFANA_PASSWORD: 'grafana'
 
 # Version of grafana you want to install
-GRAFANA_SOURCE_FILENAME: 'grafana-1.8.1'
+GRAFANA_SOURCE_FILENAME: 'grafana-6.3.4.linux-amd64'
 
 # Port for grafana nginx virtual server
 GRAFANA_NGINX_PORT: 80
