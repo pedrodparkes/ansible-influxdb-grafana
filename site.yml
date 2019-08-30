@@ -2,9 +2,10 @@
 - hosts: all
   sudo: yes
   vars_files:
-    - 'vars/external_vars.yml'
+    - vars/external_vars.yml
+
   roles:
-    - common
-    - nginx
     - influxdb
     - grafana
+    - nginx
+    - python-server-metrics
