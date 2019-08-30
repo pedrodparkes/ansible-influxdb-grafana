@@ -7,7 +7,7 @@
   register: grafana_download
 
 - name: grafana - download sources
-  shell: wget http://grafanarel.s3.amazonaws.com/{{ GRAFANA_SOURCE_FILENAME }}.tar.gz
+  shell: wget https://dl.grafana.com/oss/release/{{ GRAFANA_SOURCE_FILENAME }}.tar.gz 
   when: not grafana_download.stat.exists
   args:
     chdir: ~/src
