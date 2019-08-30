@@ -6,10 +6,10 @@ INFLUXDB_ROOT_PASSWORD: 'root'
 INFLUXDB_DATABASE: 'project'
 
 # User that will connect to above database
-INFLUXDB_USER: 'project'
+INFLUXDB_USER: 'user'
 
 # Password for the above user
-INFLUXDB_PASSWORD: 'project'
+INFLUXDB_PASSWORD: 'password'
 
 # Password for the grafana user who will connect to the grafana database
 INFLUXDB_GRAFANA_PASSWORD: 'grafana'
