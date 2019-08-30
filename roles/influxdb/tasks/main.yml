@@ -2,10 +2,6 @@
 - name: influxdb - create folders
   shell: mkdir -p ~/src
 
-# - name: influxdb - check if sources have been downloaded
-#   stat: path=~/src/influxdb_latest_amd64.deb
-#   register: influxdb_download
-
 - name: influxdb - add repokey
   shell: wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
@@ -13,7 +9,7 @@
   shell: source /etc/lsb-release && echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
   args:
     executable: /bin/bash
-    
+
 - name: influxdb - install package
   apt:
     name: "influxdb"

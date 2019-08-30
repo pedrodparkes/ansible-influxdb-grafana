@@ -6,6 +6,11 @@
 
   roles:
     - influxdb
-    - grafana
-    - nginx
+    - cloudalchemy.grafana
+      vars:
+        grafana_security:
+          admin_user: admin
+          admin_password: enter_your_secure_password
+    # - grafana
+    # - nginx
     # - python-server-metrics
